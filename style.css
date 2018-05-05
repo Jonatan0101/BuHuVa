@@ -63,3 +63,40 @@ form div{
     box-shadow: 14px 14px 26px 0px rgba(0,0,0,0.57); 
     margin: 10rem auto;
 }
+.btn{
+    border: none;
+    display: block;
+    padding: 1rem 2rem;
+    background: green;
+    color: whitesmoke;
+    margin: 1rem auto;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.error-modal{
+    display: none;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4); 
+    width: 100%;
+    height: 100%;
+}
+.modal-content{
+    background-color: #ffffff;
+    width: 30%;
+    color: rgb(255, 0, 0);
+    margin: 15% auto;
+}
+.modal-content h2{
+    background-color: red;
+    color: white;
+}
+
+#close{
+    background: red;
+}
+
+

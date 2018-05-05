@@ -36,27 +36,39 @@
 
     <section id="info">
         <div class="container">
+            <h2>Husvagn av hög kvalité</h2>
+            <p>Alla husvagnar har livstids garanti och kontrolleras noggrant innan de skickas iväg. </p>
 
         </div>
     </section>
     <section id="buy">
        <div class="container">
             <h2>Köp nu:</h2>
-            <form>
+            <form onsubmit="return false">
 				<div class="name">
 					<label for="name">Namn:</label>
-					<input type="text" id="name" required>
+					<input type="text" id="name" >
 				</div>
 				<div class="amount">
 					<label for="number">Antal husvagnar:</label>
-					<input id="number" type="number" required>
+					<input id="number" type="number" >
 				</div>
 				<div class="adress">
 					<label for="adress">Din adress:</label>
-					<input type="text" id="adress" required>
+					<input type="text" id="adress" >
 				</div>
-                <button id="btn">Köp</button>
+                <button id="buy-btn" class="btn">Köp</button>
             </form>
+
+            <div class="error-modal">
+                <div class="modal-content">
+                    <h2>Det blev något fel med din beställning!</h2>
+
+                    <p id='error-message'></p>
+                    <button class='btn' id="close">Stäng</button>
+                </div>
+            </div>
+
        </div>
     </section>
     <script src="app.js"></script>
