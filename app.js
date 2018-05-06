@@ -33,7 +33,7 @@ function submitForm(name, amount, adress){
             error += 'Du måste fylla i en adress! '
         }
     } else {
-        
+        alert('Beställningen lyckades!')
     }
     errorMessage.textContent = error;
 }
