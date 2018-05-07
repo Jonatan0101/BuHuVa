@@ -23,7 +23,7 @@ function submitForm(name, amount, adress){
     let error = "";
     if (name === ""  ,amount > 20 , adress === '') {
         popUp.style.display = 'block';
-        if(name === ''){
+        if(name === ""){
             error += 'Du måste skriva ett namn! '
         }
         if (amount > 20) {
