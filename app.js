@@ -21,7 +21,7 @@ function checkForm(event){
 
 function submitForm(name, amount, adress){
     let error = "";
-    if (name === ""  ,amount > 20 , adress === '') {
+    if (name === "" || amount > 20 || adress === '') {
         popUp.style.display = 'block';
         if(name === ""){
             error += 'Du måste skriva ett namn! '
